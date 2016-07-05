@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <title>Todos</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <style>
+        .completed    { color: #27ae60; }
+        .todos label  { cursor: pointer; }
+        header h1     { margin: 0; }
+
+        .todos{
+            list-style: none;
+            margin: 0;
+            padding: 2em;
+        }
+
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #eee;
+            border-radius: 5px;
+            padding: 1em;
+            margin-top: 1em;
+            border: 1px solid #ddd;
+        }
+
+    </style>
+</head>
+<body ng-controller="mainCtrl">
+
+    <div class="container">
+
+        <header>
+            <h1>Todos</h1>
+            <button class="btn btn-warning" ng-click="clear()">Clear</button>
+        </header>
+
+        <ul class="todos">
+            <li ng-repeat="todo in todos" ng-class="{completed: todo.done}">
+                <label for="todo[{{$index}}]">
+                    <input type="checkbox" id="todo[{{$index}}]" ng-model="todo.done" ng-change="store()">
+                    {{ todo.content }}
+                </label>
+            </li>
+        </ul>
+
+        <form class="form-inline" ng-submit="add()">
+            <input type="text" class="form-control" ng-model="newTodo">
+            <button class="btn btn-info">Add</button>
+        </form>
+
+    </div>
+
+
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+    <script>
+
+        function mainCtrl($scope){
+            $scope.todos = [];
+
+            if(localStorage.todos){ // if there is todos in the localstorage
+                $scope.todos = JSON.parse(localStorage.todos); // use them
+            }
+
+            $scope.add = function(){
+                if(!$scope.newTodo) return; // die if the newTodo is blank
+
+                // add a new todo into the list
+                $scope.todos.push({content: $scope.newTodo, done: false});
+                $scope.newTodo = ''; // clear the input (data-binding bitch!)
+
+                $scope.store(); // store the list in localstorage
+            }
+
+            $scope.clear = function(){
+                // Keep todos that are not done. Delete the rest.
+                $scope.todos = $scope.todos.filter(function(el){
+                    return !el.done;
+                });
+
+                $scope.store(); // store the list in localstorage
+            }
+
+            $scope.store = function(){
+                // Remove all the $$hashKey properties from the todos, which
+                // causes problems when we load todos from localstorage
+                var todos = $scope.todos.map(function(el){
+                    delete el.$$hashKey;
+                    return el;
+                });
+
+                // put the todos into localstorage
+                localStorage.todos = JSON.stringify(todos);
+            }
+        }
+
+    </script>
+</body>
+</html>
