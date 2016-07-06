@@ -1,10 +1,3 @@
-$(function(){
-
-
-
-
-
-	
 
 	$(".toggleNav").click(function() {
   $("#subnav").toggleClass("active");
@@ -14,7 +7,7 @@ $(function(){
 
 
 
-});
+
 
 $(function(){
 
