@@ -1,0 +1,46 @@
+@media (max-width: 999px) {
+  .i-nav{
+    display: block;
+    width: 50px;
+    height: 50px;
+    padding-top: 25px;
+    float: right;
+  }
+
+  .nav-icon{
+    width: 25px;
+  }
+
+  .g1{
+    padding: 50px 0 0 0;
+  }
+  .g2{
+    padding: 0 0 50px 0;
+  }
+
+
+  nav ul {
+    overflow: hidden;
+    background: #ececec;
+    display: none;
+  }
+
+  nav ul.open {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 999px) {
+  .nav-icon {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .slider, .slide-buttons {
+    display: none;
+  }
+}
+
+@media (min-width: 1000px) {
+}
