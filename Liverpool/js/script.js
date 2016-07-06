@@ -1,33 +1,22 @@
-$(function(){
 
 
 
-
-
+$(document).ready(function(){
 	
 
-	$(".toggleNav").click(function() {
-  $("#subnav").toggleClass("active");
-  $(".toggleNavButton").toggleClass("active");
+$(".toggleNav").click(function() {
+$("#subnav").toggleClass("active");
+$(".toggleNavButton").toggleClass("active");
 });
-
-
-
 
 });
 
-$(function(){
-
-
+$(document).ready(function(){
 $(".fancybox").fancybox({	
 
 wrapCSS : "fancybox-custom",
 closeClick : true,
 openEffect: 'elastic',                   
-helpers : {title:{type:'inside'}, 
-
-
-}
+helpers : {title:{type:'inside'}, }
 });
-
 });
