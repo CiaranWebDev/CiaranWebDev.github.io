@@ -1,4 +1,4 @@
-$(document).ready(function(){
+
 
 google.maps.event.addDomListener(window, 'load', init);
     var map;
@@ -76,7 +76,7 @@ link = web;
  }
 }
 
-}
+
 
 var downButtons = document.querySelectorAll('[data-target]'),
     animationTimer;
