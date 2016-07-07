@@ -1,0 +1,503 @@
+@font-face {
+   font-family: BebasNeue;
+   src: url(../BebasNeue.otf);
+}
+
+body{
+	margin:0;
+  
+}
+h1{
+margin-bottom: 40px;
+  font-size: 4em;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+letter-spacing: 8px;
+color:#B6B6B6;
+
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2em;
+}
+
+
+
+/*    HEADER AND HAMBURGER     */
+
+
+header{
+  position: absolute;
+  top:5%;
+  margin:0;
+  height: 50px;
+  background-color: none;
+  width:100%;
+}
+
+
+nav{
+  width:600px;
+margin:0 auto;
+color:white;
+text-transform: uppercase;
+   font-family: BebasNeue;
+   letter-spacing: 4px;
+   font-size: 1.6em;
+}
+
+nav ul{
+  list-style: none;
+  margin: 0;
+}
+
+nav li{
+  display: inline-block;
+  margin: 0 1em;
+  position: relative;
+  top:0;
+
+}
+
+nav a{
+  color: inherit;
+  font-weight: bold;
+  font-size: 1.1em;
+  text-decoration: none;
+}
+
+
+
+
+
+/*    END OF HAMBURGER AND HEADER   */
+
+
+/*Landing div*/
+.landing{
+	width:100%;
+	height:100vh;
+	background-size: cover;
+	background-image: linear-gradient(rgba(59, 59, 59, 0.74), rgba(59, 59, 59, 0.55)),url('../img/landing.jpg');
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:column;
+
+}
+
+.logo img{
+
+align-self: flex-start;
+
+}
+
+.landing h1{
+
+}
+
+/*Landing div*/
+
+.headerImg{
+  width:100px;
+  height: auto;
+  margin:0 auto;
+
+}
+
+.pageContainer{
+  width:65%;
+  min-width: 600px;
+  height:1000px;
+  margin:0 auto;
+  
+}
+.about{
+  margin:4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:column;
+  
+}
+
+.about .aboutText{
+display: column;
+text-align: center;
+width:800px;
+}
+
+
+.imgCont{
+  display: flex;
+  width:100%;
+  min-width: 500px;
+  height:450px;
+  justify-content: center;
+
+}
+
+
+.socialImg{
+  width:500px;
+  height:100%;
+  float: left;
+  margin: 1em;
+  display: table;
+  background-image: url('../img/1.1.jpg');
+  background-size:cover;
+  background-position: center;
+
+}
+
+.socialImg2{
+  width:500px;
+  height:100%;
+  float: left;
+  margin: 1em;
+  display: table;
+  background-image: url('../img/1.2.jpg');
+  background-size:cover;
+  background-position: center;
+
+}
+
+div.whiteCover { 
+  color: #D92B2B;
+  background-color: white;
+  opacity: 0.0;
+  width:100%;
+  height:100%;
+  transition: opacity 500ms;
+}
+
+div.whiteCover:hover {
+  opacity: 0.75;
+}
+
+
+
+#slides .slidesjs-navigation {
+      margin-top:3px;
+    }
+
+    #slides .slidesjs-previous {
+      margin-right: 5px;
+      float: left;
+    }
+
+    #slides .slidesjs-next {
+      margin-right: 5px;
+      float: left;
+    }
+
+    .slidesjs-pagination {
+      margin: 6px 0 0;
+      float: right;
+      list-style: none;
+    }
+    
+    .slidejs 
+    .slidesjs-pagination li {
+      float: left;
+      margin: 0 1px;
+    }
+    
+   
+    .slidesjs-pagination li a {
+      display: block;
+      width: 13px;
+      height: 0;
+      padding-top: 13px;
+      background-image: url(../img/pagination.png);
+      background-position: 0 0;
+      float: left;
+      overflow: hidden;
+    }
+
+    .slidesjs-pagination li a.active,
+    .slidesjs-pagination li a:hover.active {
+      background-position: 0 -13px
+    }
+
+    .slidesjs-pagination li a:hover {
+      background-position: 0 -26px
+    }
+
+    #slides a:link,
+    #slides a:visited {
+      color: #333
+    }
+
+    #slides a:hover,
+    #slides a:active {
+      color: #9e2020
+    }
+
+    .navbar {
+      overflow: hidden
+    }
+ #slides {
+      display: none
+    }
+
+    .slideCont {
+      margin: 0 auto
+    }
+
+    /* For tablets & smart phones */
+    @media (max-width: 767px) {
+      body {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .slideCont {
+        width: auto
+      }
+    }
+
+    /* For smartphones */
+    @media (max-width: 480px) {
+      .slideCont {
+        width: auto
+      }
+    }
+
+    /* For smaller displays like laptops */
+    @media (min-width: 768px) and (max-width: 979px) {
+      .slideCont {
+        width: 724px
+      }
+    }
+
+    /* For larger displays */
+    @media (min-width: 1200px) {
+      .slideCont {
+        width: 1170px
+      }
+    }
+
+
+.hours{
+
+  margin:4em;
+  display: flex;
+  justify-content: center;
+  flex-direction:column;
+  
+}
+
+
+table{
+  font-family: BebasNeue;
+  font-size: 1.2em;
+  letter-spacing: 0.2em;
+  width: 500px;
+  float: left;
+  margin: 1em;
+}
+
+th{
+  text-align: left;
+  padding: 1em;
+}
+td{
+  text-align: right;
+}
+
+
+
+
+ #map {
+        height:300px;
+        width:100%;
+    }
+    .gm-style-iw * {
+        display: block;
+        width: 100%;
+    }
+    .gm-style-iw h4, .gm-style-iw p {
+        margin: 0;
+        padding: 0;
+    }
+    .gm-style-iw a {
+        color: #4272db;
+    }
+
+
+
+
+
+
+
+/*    Gallery   */
+
+
+
+.booking {
+  background: #efefef;
+  font-size: 62.5%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: #B6B6B6;
+}
+
+.booking section {
+  background: white;
+  margin: 60px auto 120px;
+  border-top: 15px solid #313A3D;
+  text-align: center;
+  padding: 50px 0 110px;
+  width: 80%;
+  max-width: 1100px;
+}
+.booking section h1 {
+  margin-bottom: 40px;
+  font-size: 4em;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+}
+
+form {
+  width: 58.33333%;
+  margin: 0 auto;
+}
+form .field {
+  width: 100%;
+  position: relative;
+  margin-bottom: 15px;
+}
+form .field label {
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  background: #c9c9c9;
+  width: 100%;
+  padding: 18px 0;
+  font-size: 1.45em;
+  letter-spacing: 0.075em;
+  -webkit-transition: all 333ms ease-in-out;
+  -moz-transition: all 333ms ease-in-out;
+  -o-transition: all 333ms ease-in-out;
+  -ms-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
+}
+form .field label + span {
+  font-family: 'SSStandard';
+  opacity: 0;
+  color: white;
+  display: block;
+  position: absolute;
+  top: 12px;
+  left: 7%;
+  font-size: 2.5em;
+  text-shadow: 1px 2px 0 #cd6302;
+  -webkit-transition: all 333ms ease-in-out;
+  -moz-transition: all 333ms ease-in-out;
+  -o-transition: all 333ms ease-in-out;
+  -ms-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
+}
+form .field input[type="text"],
+form .field textarea {
+  border: none;
+  background: white;
+  width: 80.5%;
+  margin: 0;
+  padding: 18px 0;
+  padding-left: 19.5%;
+  color: #313A3D;
+  font-size: 1.4em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+form .field input[type="text"]#msg,
+form .field textarea#msg {
+  height: 18px;
+  resize: none;
+  -webkit-transition: all 333ms ease-in-out;
+  -moz-transition: all 333ms ease-in-out;
+  -o-transition: all 333ms ease-in-out;
+  -ms-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
+}
+form .field input[type="text"]:focus, form .field input[type="text"].focused,
+form .field textarea:focus,
+form .field textarea.focused {
+  outline: none;
+}
+form .field input[type="text"]:focus#msg, form .field input[type="text"].focused#msg,
+form .field textarea:focus#msg,
+form .field textarea.focused#msg {
+  padding-bottom: 150px;
+}
+form .field input[type="text"]:focus + label, form .field input[type="text"].focused + label,
+form .field textarea:focus + label,
+form .field textarea.focused + label {
+  width: 18%;
+  background: black;
+  color: #c9c9c9;
+}
+form .field input[type="text"].focused + label,
+form .field textarea.focused + label {
+  color: #c9c9c9;
+}
+form .field:hover label {
+  width: 18%;
+  background: #313A3D;
+  color: white;
+}
+form input[type="submit"] {
+  background: #c9c9c9;
+  color: white;
+  -webkit-appearance: none;
+  border: none;
+  text-transform: uppercase;
+  position: relative;
+  padding: 13px 50px;
+  font-size: 1.4em;
+  letter-spacing: 0.1em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  -webkit-transition: all 333ms ease-in-out;
+  -moz-transition: all 333ms ease-in-out;
+  -o-transition: all 333ms ease-in-out;
+  -ms-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
+}
+form input[type="submit"]:hover {
+  background: #313A3D;
+  color: #c9c9c9;
+}
+form input[type="submit"]:focus {
+  outline: none;
+  background: #cd6302;
+}
+
+footer{
+  height:200px;
+  background-color: #313A3D;
+  bottom:0;
+}
+
+.social {
+    width:600px;
+    height:80px;
+    margin: 0 auto;
+  color: #cc0000;
+  text-decoration: none;
+}
+
+
+
+.social i{
+    margin:1em;
+      color: white;
+  text-decoration: none;
+}

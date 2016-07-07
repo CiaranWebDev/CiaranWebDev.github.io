@@ -1,0 +1,74 @@
+body{
+	margin: 0;
+
+}
+
+.vidHold{
+	background-color: black;
+	width:100%;
+	height:70vh;
+}
+.videoWrapper {
+
+	position: relative;
+	height: 70vh;
+	width: auto;
+	max-width: 1000px;
+	margin:0 auto;
+
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+.infoHolder{
+	width:800px;
+	height:800px;
+	margin:0 auto;
+
+}
+
+#name{
+
+	text-align: center;
+}
+
+.inner{
+
+	width: 1000px;
+	height:700px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#poster{
+	height:auto;
+	width:300px;
+	float: left;
+}
+
+#poster img {
+	width: 100%;
+	height: 100%;
+}
+
+#synopsis{
+	padding:1em;
+	width:500px;
+	height:200px;
+	display: block;
+	float: left;
+}
+
+#cast{
+	padding:1em;
+	width:500px;
+	height:400px;
+	display: block;
+	float: left;
+}
