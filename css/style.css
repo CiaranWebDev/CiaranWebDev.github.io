@@ -5,12 +5,12 @@ body{
 }
 
 header{
-	width:100%;
-	height:700px;
-	min-height: 700px;
-	background-image:url('../img/head.jpg');
-	background-position: center bottom;
-	background-size: cover;
+  width:100%;
+  height:700px;
+  min-height: 700px;
+  background-image:url('../img/head.jpg');
+  background-position: center bottom;
+  background-size: cover;
   
 }
 
@@ -32,7 +32,6 @@ header{
     vertical-align: middle;
 
 }
-
 
 
 
@@ -482,9 +481,15 @@ font-size: 15px;
 .projectImg{
   width:400px;
   height:400px;
-  background-color: red;
   position:absolute;
 }
+.projectImg img{
+  width:400px;
+  height:auto;
+  overflow: hidden;
+}
+
+
 
 .projectMsg{
   width:500px;
